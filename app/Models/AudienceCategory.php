@@ -8,4 +8,10 @@ use Illuminate\Database\Eloquent\Model;
 class AudienceCategory extends Model
 {
     use HasFactory;
+
+    protected $fillable = [
+        'code',
+        'minimum_age_limit',
+        'icon'
+    ];
 }
